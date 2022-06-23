@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top {
+    /* width: 100%; */
+    height: 60vh;
+    background: lightblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./pictures/virtualteaching.jpg");
+    padding: 3rem;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: linear-gradient(to bottom right, #1a2d3f, #1b5ea159);
+}
+
+.inner {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    padding: 2rem 5rem;
+    width: 40%;
+    /* width: min(100% - 3rem, 40em); */
+    /* margin-inline: left; */
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    font-size: 1vw;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right bottom, #ffffff, #ffffff49);
+}
+
+@media (max-width: 50em) {
+    .top{
+        height: 30vh;
+    }
+    .inner {
+        position: static;
+        margin-inline: auto;
+        width: calc(100% - 3rem);
+        padding: 1rem;
+    }
+}
+
+.preview-description {
+    font-size: 1vw;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.img-fluid,
+.videos {
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 2rem 40px 0px rgba(77, 76, 76, 0.329);
+}
+
+.videos {
+    padding: 1.5rem;
+}
+
+.container {
+    padding: 2%;
+    text-align: center;
+    background-image: url("./pictures/background.svg");
+}
+
+.grade-title {
+    text-align: left;
+    color: #83b2eb;
+    font-size: 2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    text-align: left;
+    color: #83b2eb;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.grade-level {
+    color: #777;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2vw;
+    padding-left: 1rem;
+}
+
+.grade {
+    border-left: 3px solid #779ece;
+    padding-left: 10px;
+    padding-top: 3%;
+}
+
+.btn {
+    margin-right: 5%;
+    padding: 1% 10%;
+    border-radius: 8px;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.btn:hover {
+    background-color: #142e4d;
+    color: #ffff;
+    border: none;
+}
+
+.tutorials {
+    margin: 3rem 0;
+}
