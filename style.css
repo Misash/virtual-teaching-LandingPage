@@ -108,15 +108,19 @@
     border-left: 3px solid #779ece;
     padding-left: 10px;
     padding-top: 3%;
-}
+} 
 
-.btn {
-    margin-right: 5%;
-    padding: 1% 10%;
+
+
+.btn{
+    margin: 2%;
+    padding: 2% 10%;
     border-radius: 8px;
     color: #ffff;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1vw;  
+    width: unset; /* note: width: auto; would also work here */
+    display: inline-block;
 }
 
 .btn:hover {
